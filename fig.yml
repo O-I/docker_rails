@@ -11,4 +11,4 @@ web:
   links:
     - db
   volumes:
-    - .:/myapp
+    - .:/docker_rails

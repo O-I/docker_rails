@@ -14,7 +14,7 @@ RUN apt-get install -y libqt4-webkit libqt4-dev xvfb
 # for a JS runtime
 RUN apt-get install -y nodejs
 
-ENV APP_HOME /myapp
+ENV APP_HOME /docker_rails
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
