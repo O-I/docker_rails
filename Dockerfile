@@ -21,4 +21,8 @@ WORKDIR $APP_HOME
 ADD Gemfile* $APP_HOME/
 RUN bundle install
 
+# Configure an entry point, so we don't need to specify
+# "bundle exec" for each of our commands.
+ENTRYPOINT ["bundle", "exec"]
+
 ADD . $APP_HOME
